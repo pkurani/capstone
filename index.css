@@ -50,3 +50,48 @@ body {
   padding-right: 10%;
   font-size: 1.3rem;
 }
+
+#review{
+  position: relative;
+  margin-left: 5%;
+  width:500px;
+  height:100px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #BBD5F2;
+  background: #BBD5F2;
+}
+
+#stars{
+  position: absolute;
+  bottom: 25%;
+  left: 130%;
+}
+
+#stars1{
+  position: absolute;
+  bottom: 41%;
+  left: 30%;
+}
+
+#stars2{
+  position: absolute;
+  bottom: 15%;
+  left: 130%;
+}
+
+#stars3{
+  position: absolute;
+  bottom: 5%;
+  left: 27%;
+}
+
+#review1{
+  margin-left: 55%;
+  width:500px;
+  height:100px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #F4DAE2;
+  background: #F4DAE2;
+}
