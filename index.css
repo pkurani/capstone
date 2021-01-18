@@ -127,7 +127,7 @@ body {
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
+  from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
 
@@ -165,3 +165,7 @@ body {
   color: white;
 }
 
+.product {
+  max-width: 200px;
+  max-height: 200px;
+}
