@@ -23,38 +23,73 @@
      <br>
      <div><center><h5 class="my-0 mr-md-auto font-weight-bold" id="companyName">Help Center</h5></center></div>
      <br><br>
-     <div style="margin-left:18%; position:absolute; bottom:50%;"><button id="myBtn">Mission</div>
-     <div style="margin-left:18%; position:absolute; bottom:55%;"><img src =images/MissionIm.png width="48" height="48"></div>
-   </button>
-     <div style="margin-left:48%; position:absolute; bottom:50%;">Media</div>
-     <div style="margin-left:48%; position:absolute; bottom:55%;"><img src =images/MediaIm.png width="48" height="48"></div>
-     <div style="margin-left:78%; position:absolute; bottom:50%;">Gifting</div>
-     <div style="margin-left:78%; position:absolute; bottom:55%;"><img src =images/GiftingIm.png width="48" height="48"></div>
-     <div style="margin-left:18%; position:absolute; bottom:20%;">Returns</div>
-     <div style="margin-left:18%; position:absolute; bottom:25%;"><img src =images/ReturnsIm.png width="48" height="48"></div>
-     <div style="margin-left:47%; position:absolute; bottom:20%;">Shipping</div>
-     <div style="margin-left:47%; position:absolute; bottom:25%;"><img src =images/ShippingIm.png width="48" height="48"></div>
-     <div style="margin-left:77%; position:absolute; bottom:20%;">Checkount</div>
-     <div style="margin-left:77%; position:absolute; bottom:25%;"><img src =images/CheckoutIm.png width="48" height="48"></div>
+     <div style="margin-left:18%; position:absolute; bottom:50%;"><button id="missionBtn">Mission</div>
+     <div style="margin-left:18%; position:absolute; bottom:55%;"><img src =images/MissionIm.png width="48" height="48"></div></button>
+     <div style="margin-left:48%; position:absolute; bottom:50%;"><button id="mediaBtn">Media</div>
+     <div style="margin-left:48%; position:absolute; bottom:55%;"><img src =images/MediaIm.png width="48" height="48"></div></button>
+     <div style="margin-left:78%; position:absolute; bottom:50%;"><button id="giftingBtn">Gifting</div>
+     <div style="margin-left:78%; position:absolute; bottom:55%;"><img src =images/GiftingIm.png width="48" height="48"></div></button>
+     <div style="margin-left:18%; position:absolute; bottom:20%;"><button id="returnsBtn">Returns</div>
+     <div style="margin-left:18%; position:absolute; bottom:25%;"><img src =images/ReturnsIm.png width="48" height="48"></div></button>
+     <div style="margin-left:47%; position:absolute; bottom:20%;"><button id="shippingBtn">Shipping</div>
+     <div style="margin-left:47%; position:absolute; bottom:25%;"><img src =images/ShippingIm.png width="48" height="48"></div></button>
+     <div style="margin-left:77%; position:absolute; bottom:20%;"><button id="checkoutBtn">Checkout</div>
+     <div style="margin-left:77%; position:absolute; bottom:25%;"><img src =images/CheckoutIm.png width="48" height="48"></div></button>
 </style>
 </head>
-<body>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="missionModal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
     <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
+      <span class="close">&times;</span>
+      <h2><center>Mission</center></h2>
+      <p>Across the world, we see companies making amazing socks for customers across the globe; however, we recognized that no consumers in India did not have that option. Our main goal is to bring the craze of cool, comfortable socks to India by giving our customers the option to buy cheap, affordable socks that can be worn in any setting!
+      </p>
     </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal1 = document.getElementById("missionModal");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("missionBtn");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+</script>
+
+<!-- The Modal -->
+<div id="mediaModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <span class="close">&times;</span>
+      <h2><center>Media & Partnerships</center></h2>
+      <p>We currently partner with some of India’s biggest companies, including Cool Company 1, Cool Company 2, along with Cool Company 3. For partnership inquiries, shoot us an email at xxxx@socksoho.com.
+      </p>
     </div>
   </div>
 
@@ -62,30 +97,200 @@
 
 <script>
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("mediaModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("mediaBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+btn2.onclick = function() {
+  modal2.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+span2.onclick = function() {
+  modal2.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modal2) {
+    modal2.style.display = "none";
   }
 }
 </script>
+
+<!-- The Modal -->
+<div id="giftingModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <span class="close">&times;</span>
+      <h2><center>Gifting</center></h2>
+      <p>Yes, you can customize SockSoho gift boxes with socks of your choice. If this is a gift we will add a beautiful customized postcard with your message and picture on it. 
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal3 = document.getElementById("giftingModal");
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("giftingBtn");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close")[2];
+
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+}
+</script>
+
+<!-- The Modal -->
+<div id="returnsModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <span class="close">&times;</span>
+      <h2><center>Returns & Exchanges</center></h2>
+      <p>We have a no questions asked 10 day return policy. If you intend to return a product, please email us at xxxx@socksoho.com. If the return is approved, you will be refunded directly to your account in 2-5 business days. Shipping costs are nonrefundable.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal4 = document.getElementById("returnsModal");
+
+// Get the button that opens the modal
+var btn4 = document.getElementById("returnsBtn");
+
+// Get the <span> element that closes the modal
+var span4 = document.getElementsByClassName("close")[3];
+
+// When the user clicks the button, open the modal 
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal4) {
+    modal4.style.display = "none";
+  }
+}
+</script>
+
+<!-- The Modal -->
+<div id="shippingModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <span class="close">&times;</span>
+      <h2><center>Shipping</center></h2>
+      <p>Free 4-5 day shipping (with tracking) on all domestic orders. Additional $10 charge on all international shipments. Orders are sent using India’s best priority shipping. For shipping issues, please contact the shipping company immediately.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal5 = document.getElementById("shippingModal");
+
+// Get the button that opens the modal
+var btn5 = document.getElementById("shippingBtn");
+
+// Get the <span> element that closes the modal
+var span5 = document.getElementsByClassName("close")[4];
+
+// When the user clicks the button, open the modal 
+btn5.onclick = function() {
+  modal5.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span5.onclick = function() {
+  modal5.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal5) {
+    modal5.style.display = "none";
+  }
+}
+</script>
+
+<!-- The Modal -->
+<div id="checkoutModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <span class="close">&times;</span>
+      <h2><center>Checkout & Account</center></h2>
+      <p>For changes to orders or issues with credit cards, please contact us immediately on xxxx@socksoho.com. For urgent inquiries, contact us at (123) 456-7890.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal6 = document.getElementById("checkoutModal");
+
+// Get the button that opens the modal
+var btn6 = document.getElementById("checkoutBtn");
+
+// Get the <span> element that closes the modal
+var span6 = document.getElementsByClassName("close")[5];
+
+// When the user clicks the button, open the modal 
+btn6.onclick = function() {
+  modal6.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span6.onclick = function() {
+  modal6.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal6) {
+    modal6.style.display = "none";
+  }
+}
+</script>
+
   </body>
 </html>
